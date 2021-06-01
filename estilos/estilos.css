@@ -34,7 +34,7 @@
 }
 
 
-
+/* cambios de letras en menu y colores */
 .navbar .logo a{
     font-size: 35px;
     font-weight: 600;
@@ -45,6 +45,13 @@
     color: #fff;
 }
 
+.fa-bars:before {
+    color: black;
+}
+
+.navbar.sticky .fa-bars:before {
+    color: white;
+}
 
 .navbar .logo a span{
     color: black;
@@ -94,6 +101,94 @@
 } 
 
 
+.titulos {
+    margin-top: 60px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulos hr{
+    height: 10px;
+    margin-left: 25px;
+    margin-right: 25px;    
+    background: black;
+    
+}
+
+
+/*modelos de camperas */
+section {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+}
+
+.tarjeta{
+    width: 300px;
+    height: 500px;
+    margin: 5px 5px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+    cursor: default;
+}
+.tarjeta:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    
+    transition: all 400ms ease;
+}
+.tarjeta img{
+    width: 100%;
+    height: 400px;
+}
+
+.tarjeta p{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/*Boton de comprar y precio*/
+.tarjeta .contenido{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    
+    margin: 10px 15px;   
+}
+
+.tarjeta .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    background: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 19px;
+    padding: 6px;
+    width: 120px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5x;
+}
+
+.tarjeta .contenido a:hover{
+    background: #d8e3e7;
+    color: black;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 70px;
+    width: 100%;
+    height: 100px;
+}
+
 /* btn ir arriba*/
 
 .scroll-up-btn{
@@ -141,99 +236,6 @@
         margin-top:7px;
         margin-left:2px;
         }
-    
-
-
-
-.titulos {
-    margin-top: 60px;
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 60px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-}
-
-.titulos hr{
-    height: 10px;
-    margin-left: 25px;
-    margin-right: 25px;    
-    background: black;
-    
-}
-
-
-/*modelos de camperas */
-section {
-    margin-top: 10px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;  
-}
-
-.tarjeta{
-    width: 300px;
-    height: 550px;
-    margin: 5px 5px;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    transition: all 400ms ease;
-    cursor: default;
-}
-.tarjeta:hover{
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    
-    transition: all 400ms ease;
-}
-.tarjeta img{
-    width: 100%;
-    height: 400px;
-}
-
-.tarjeta p{
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-/*Boton de comprar y precio*/
-.tarjeta .contenido{
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    
-    margin: 10px 15px;   
-}
-
-.tarjeta .contenido a{
-    text-decoration: none;
-    display: inline-block;
-    background: black;
-    color: white;
-    border: 1px solid black;
-    border-radius: 19px;
-    padding: 6px;
-    width: 120px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 10px;
-}
-
-.tarjeta .contenido a:hover{
-    background: #d8e3e7;
-    color: black;
-}
-
-footer{
-    background-color: rgba(0, 0, 0, 0.9);
-    margin-top: 70px;
-    width: 100%;
-    height: 100px;
-}
-
-
 
 
 
