@@ -7,6 +7,15 @@
     text-decoration: none;
 }
 
+.contacto-compra{
+    width: 100%;
+    height: 20px;
+    background-color: ghostwhite;  
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -17,7 +26,7 @@
 .navbar{    
     position: fixed;
     width: 100%;   
-    padding: 30px 0;     
+    padding: 20px 0;     
     font-family: "Ubuntu", sans-serif; 
     transition: all 0.3s ease;     
 }
@@ -54,7 +63,7 @@
 }
 
 .navbar .logo a span{
-    color: black;
+    color: transparent;
     transition: color 0.3s ease;
 }
 
@@ -130,17 +139,19 @@ section {
 
 .tarjeta{
     width: 300px;
-    height: 530px;
+    height: 480px;
     margin: 5px 5px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
     transition: all 400ms ease;
     cursor: default;
 }
+
+
 .tarjeta:hover{
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.4);
     
     transition: all 400ms ease;
 }
@@ -158,8 +169,7 @@ section {
 .tarjeta .contenido{
     display: flex;
     justify-content: space-around; 
-    align-items: center;
-    
+    align-items: center;    
     margin: 10px 15px;   
 }
 
@@ -171,7 +181,7 @@ section {
     border: 1px solid black;
     border-radius: 19px;
     padding: 6px;
-    width: 120px;
+    width: 200px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 7x;
@@ -287,36 +297,50 @@ footer{
     .navbar .menu li{
         display: block;
     }
+
     .navbar .menu li a{
         display: inline-block;
-        margin: 20px 0;
+        margin: 10px 0;
         font-size: 25px;
         color: white;
-
     }
 
-    .navbar .menu li a:hover{
-        
-        font-size: 25px;
-        
-
+    .navbar .menu li a:hover{        
+        font-size: 25px;      
     }
 }
 
 @media (max-width: 800px) {
     
     .titulos {
-        margin-top: 60px;
-        font-size: 27px;
+        
+        font-size: 25px;
+        margin-top: 0%; 
         font-weight: bold;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
         text-align: center;
         font-family: 'Poppins', sans-serif;
-        color:black;       
+        color:white;
+        background: black;  
+            
         
         
         
     }
+
+    .titulos hr{
+        background-color: rgba(0, 0, 0, 0.9);           
+        margin-left: 0px; 
+        margin-right: 0px;
+        height: 0%;
+     
+
+    }
+    .cuadros img{
+       
+        
+    }
+   
 
 
 }
