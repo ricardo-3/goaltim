@@ -13,8 +13,14 @@
     background-color: ghostwhite;  
     margin-bottom: 10px;
     text-align: center;
-
 }
+
+.contacto-compra a{
+    list-style: none;
+    color: black;
+}
+
+
 
 .max-width{
     max-width: 1300px;
