@@ -236,6 +236,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
+    
 
 }
 
@@ -259,7 +260,8 @@ footer .redes i{
 footer .ubicacion{
     margin-bottom: 15px;
     font-size: 20px;
-
+    margin-left: 2px;
+    
 }
 
 footer .ubicacion i{
@@ -270,8 +272,9 @@ footer .ubicacion i{
 }
 
 footer .info p{
-    font-size: 15px;
+    font-size: 13px;
     margin-bottom: 5px;
+    
 }
 
 
