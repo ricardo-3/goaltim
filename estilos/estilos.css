@@ -254,13 +254,14 @@ footer .redes i{
     margin: 5px 0;
     font-size: 33px;
     margin-right: 30px;
-    
+    cursor: pointer;    
 }
 
 footer .ubicacion{
     margin-bottom: 15px;
     font-size: 20px;
     margin-left: 2px;
+    cursor: pointer; 
     
 }
 
@@ -269,12 +270,13 @@ footer .ubicacion i{
     margin: 0x 5px;    
     font-size: 22px;
     letter-spacing: 7px;
+     
 }
 
 footer .info p{
     font-size: 13px;
     margin-bottom: 5px;
-    
+    cursor: pointer;    
 }
 
 
