@@ -9,18 +9,40 @@
 
 .contacto-compra{
     width: 100%;
-    height: 20px;
+    height: 35px;
     background-color: ghostwhite;  
     margin-bottom: 10px;
     text-align: center;
+    display: inline;
+    
+   
 }
 
-.contacto-compra a{
+.contacto-compra p{
     list-style: none;
     color: black;
+    animation-name: sale;
+    animation-duration: 8s;    
+    animation-iteration-count: infinite;
+    animation-direction: alternate;    
+    
 }
 
 
+@keyframes sale {
+    from {
+      background:white ;
+      color:blue;      
+      width: 100%;
+      }
+    
+      to {
+        background:grey ;      
+        width: 100%;
+
+      }
+    
+}
 
 .max-width{
     max-width: 1300px;
@@ -145,10 +167,10 @@ section {
 
 .tarjeta{
     width: 300px;
-    height: 480px;
+    height: 580px;
     margin: 5px 5px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 15px;
     overflow: hidden;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
     transition: all 400ms ease;
@@ -163,7 +185,7 @@ section {
 }
 .tarjeta img{
     width: 100%;
-    height: 400px;
+    height: 500px;
 }
 
 .tarjeta p{
@@ -198,6 +220,11 @@ section {
     color: black;
 }
 
+
+
+
+
+
 footer{
     background-color: rgba(0, 0, 0, 0.9);
     margin-top: 70px;
@@ -205,12 +232,19 @@ footer{
     height: 100px;
 }
 
+
+
+
+
+
+
+
 /* btn ir arriba*/
 
 .scroll-up-btn{
     position: fixed;
-    height: 45px;
-    width: 42px;
+    height: 40px;
+    width: 40px;
     background: black;
     right: 70px;
     bottom: 10px;
@@ -229,8 +263,8 @@ footer{
 
 .btn-wsp{
     position:fixed;
-    width:50px;
-    height:50px;
+    width:52px;
+    height:52px;
     bottom:30px;
     right:12px;
     background:#1cc55a;
@@ -318,34 +352,8 @@ footer{
 
 @media (max-width: 800px) {
     
-    .titulos {
-        
-        font-size: 25px;
-        margin-top: 0%; 
-        font-weight: bold;
-        margin-bottom: 40px;
-        text-align: center;
-        font-family: 'Poppins', sans-serif;
-        color:white;
-        background: black;  
-            
-        
-        
-        
-    }
 
-    .titulos hr{
-        background-color: rgba(0, 0, 0, 0.9);           
-        margin-left: 0px; 
-        margin-right: 0px;
-        height: 0%;
-     
-
-    }
-    .cuadros img{
-       
-        
-    }
+   
    
 
 
