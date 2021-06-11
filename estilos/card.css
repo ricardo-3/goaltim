@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.contacto-compra{
+    width: 100%;
+    height: 20px;
+    background-color: ghostwhite;  
+    margin-top: 0%;
+    text-align: center;
+    display: inline;   
+   
+}
+
+.contacto-compra p{
+    list-style: none;
+    color: black;
+    animation-name: sale;
+    animation-duration: 8s;    
+    animation-iteration-count: infinite;
+    animation-direction: alternate;    
+    
+}
+
+
+@keyframes sale {
+    from {
+      background-color: white;  
+      color:blue;      
+      width: 100%;
+      }
+    
+      to {
+        background: ghostwhite;  
+        width: 100%;
+        color: black;
+      }
+    
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 30px;
+    margin: auto;
+}
+
+/* navbar */
+.navbar{    
+    position: fixed;
+    width: 100%;   
+    padding: 25px 0;     
+    font-family: "Ubuntu", sans-serif; 
+    transition: all 0.3s ease;     
+}
+
+.navbar.sticky{
+    padding: 0 0;
+    background: black;      
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    
+}
+
+
+/* cambios de letras en menu y colores */
+.navbar .logo a{
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+}
+
+.navbar.sticky .logo a{
+    color: #fff;
+}
+
+.fa-bars:before {
+    color: black;
+}
+
+.navbar.sticky .fa-bars:before {
+    color: white;
+}
+
+.navbar .logo a span{
+    color: transparent;
+    transition: color 0.3s ease;
+}
+
+
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar.sticky .menu li a{
+    color: white;
+}
+
+.navbar .menu li a{
+    display: block;
+    color:black;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 22px;    
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: yellow;
+}
+
+
+.navbar.sticky .menu li a:hover{
+    color: gray;
+
+}
+
+/*menu btn*/
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+} 
+
+
+.titulos {
+    margin-top: 60px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulos hr{
+    height: 10px;
+    margin-left: 25px;
+    margin-right: 25px;    
+    background: black;
+    
+}
+
+
+/*modelos de camperas */
+section {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+}
+
+.tarjeta{
+    width: 300px;
+    height: 550px;
+    margin: 5px 5px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+    cursor: default;
+}
+
+
+.tarjeta:hover{
+    box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.4);
+    
+    transition: all 400ms ease;
+}
+.tarjeta img{
+    width: 100%;
+    height: 420px;
+}
+
+.tarjeta p{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/*Boton de comprar y precio*/
+.tarjeta .contenido{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;    
+    margin: 10px 15px;   
+}
+
+.tarjeta .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    background: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 19px;
+    padding: 6px;
+    width: 150px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5x;
+}
+
+.tarjeta .contenido a:hover{
+    background: #d8e3e7;
+    color: black;
+}
+
+
+footer{
+    background: #000;
+    color: white;
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    
+
+}
+
+footer .redes{
+    display: flex;   
+    margin: 5px 5px;
+    font-size: 30px;
+    margin-bottom: 17px;
+    }
+
+
+footer .redes i{
+    margin: 10px 10px;
+    color: white;
+    margin: 5px 0;
+    font-size: 33px;
+    margin-right: 30px;
+    cursor: pointer;    
+}
+
+footer .ubicacion{
+    margin-bottom: 15px;
+    font-size: 20px;
+    margin-left: 2px;
+    cursor: pointer; 
+    
+}
+
+footer .ubicacion i{
+    color: white;
+    margin: 0x 5px;    
+    font-size: 22px;
+    letter-spacing: 7px;
+     
+}
+
+footer .info p{
+    font-size: 13px;
+    margin-bottom: 5px;
+    cursor: pointer;    
+}
+
+
+
+
+
+
+/* btn ir arriba*/
+
+.scroll-up-btn{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    background: black;
+    right: 73px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;    
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.btn-wsp{
+    position:fixed;
+    width:52px;
+    height:52px;
+    bottom:30px;
+    right:12px;
+    background:#1cc55a;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+    } 
+    .btn-wsp:hover {
+    text-decoration: none;
+    color: #25d366;
+    background-color:#fff;
+    }
+
+ .iconow i{
+        margin-top:7px;
+        margin-left:2px;
+        }
+
+
+
+
+
+
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+
+
+/*resposnive*/
+@media (max-width: 947px) {
+    
+    .max-width{        
+        padding: 10 23px;
+    }
+
+    .menu-btn{        
+        display: block;
+        z-index: 999;
+    } 
+    .menu-btn i.active::before{
+        content:  "\f00d";
+    }
+
+
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: black;
+        text-align: center;
+        padding-top: 80px ;
+        transition: all 0.4s ease;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 10px 0;
+        font-size: 25px;
+        color: white;
+    }
+
+    .navbar .menu li a:hover{        
+        font-size: 25px;      
+    }
+
+    footer{
+        display: flex;
+        justify-content:flex-end;
+        
+    }
+}
+
+@media (max-width: 400px) {
+    
+
+   footer{
+       display: flex;
+       justify-content:flex-end;
+       
+   }
+   
+
+
+}
