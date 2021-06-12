@@ -17,7 +17,9 @@
    
 }
 
-.contacto-compra p{
+.contacto-compra .mayor{
+    text-decoration: none;
+    width: 100%;
     list-style: none;
     color: black;
     animation-name: sale;
@@ -26,6 +28,14 @@
     animation-direction: alternate;    
     
 }
+.contacto-compra .mayor a{
+    color: black;
+    animation-name: sale;
+    animation-duration: 8s;    
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
 
 
 @keyframes sale {
