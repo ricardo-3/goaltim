@@ -267,6 +267,11 @@ footer .redes i{
     cursor: pointer;    
 }
 
+footer .ubicacion a{
+    text-decoration: none;
+    color: white;
+}
+
 footer .ubicacion{
     margin-bottom: 15px;
     font-size: 20px;
