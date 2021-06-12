@@ -288,10 +288,12 @@ footer .ubicacion i{
      
 }
 
-footer .info p{
+footer .info a{
     font-size: 13px;
     margin-bottom: 5px;
-    cursor: pointer;    
+    cursor: pointer; 
+    text-decoration: none;
+    color: white;  
 }
 
 
